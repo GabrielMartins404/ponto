@@ -1,0 +1,10 @@
+#Proteção desse arquivo
+<files ~ "^.*\.([Hh][Tt][Aa])">
+    order allow,deny
+    deny from all
+    satisfy all
+</files>
+
+#Restringir acesso ao arquivo de conexão
+deny from all
+

@@ -1,0 +1,209 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+:root {
+
+      /* ===== Colors ===== */
+      --body-color: #E4E9F7;
+      --sidebar-color: #FFF;
+      --primary-color: #c40e10;
+      --primary-color-light: #F6F5FF;
+      --toggle-color: #DDD;
+      --text-color: #707070;
+      --green: green;
+      --yellow: rgb(167, 167, 4);
+
+      /* ====== Transition ====== */
+      --tran-03: all 0.2s ease;
+      --tran-03: all 0.3s ease;
+      --tran-04: all 0.3s ease;
+      --tran-05: all 0.3s ease;
+}
+
+.modal {
+      cursor: pointer;
+      /*    width: 100%;
+      height: 100%;
+      background-image: linear-gradient(rgba(180, 87, 85, 0.75), rgba(180, 87, 85, 0.75));
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;*/
+      margin-top: 5em;
+}
+
+.container .container-bg {
+      margin-left: 10em;
+      width: 93%;
+}
+
+@media (max-width:1500px) {
+      .container .container-bg {
+            margin-left: 12em;
+            width: 88%;
+      }
+}
+
+.container-fluid {
+      margin-top: 35px;
+      margin: 0;
+      padding: 0;
+}
+
+.dashboard-uniq {
+      margin-top: 25px;
+}
+
+.text-dashboard {
+      font-family: 'Poppins', sans-serif;
+      font-size: 27px;
+      font-weight: bold;
+      margin-bottom: 20px;
+}
+
+.dashboard-box {
+      border: none;
+      background-color: var(--primary-color);
+      border-radius: 6px;
+      padding: 9px;
+      padding-left: 10px;
+}
+
+.container-bg .dashboard-uniq .dashboard-box a i {
+      font-family: 'Poppins', sans-serif;
+      color: #fffffffa;
+      font-weight: bold;
+      padding-top: 2px;
+      font-size: 17px;
+}
+
+.container-bg .dashboard-uniq .dashboard-box a .bx-right-arrow-circle {
+      float: right;
+      font-size: 25px;
+      margin-top: -2px;
+}
+
+
+/*================== ======================= ============*/
+
+.row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-left: 5px solid var(--primary-color);
+      border-radius: 5px;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 30px;
+}
+
+.row h2 {
+      font-size: 25px;
+}
+
+.card {
+      border-radius: 6px;
+      box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+      width: 270px;
+      height: 100px;
+      margin-left: 30px;
+      transition: all 0.3s ease-out;
+      box-sizing: border-box;
+      display: grid;
+      color: var(--text-color);
+      overflow: hidden;
+}
+.charts{
+      display: flex;
+      width: 100%;
+      align-items: center;
+      margin: auto;
+}
+.charts img{
+      width: 50em;
+      
+}
+.cad-box{
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      margin-top: 5px;
+}
+.cad-box .bx{
+      font-size: 35px;
+      margin-top: -12px;
+      
+}
+
+.cad-box h2{
+      font-family: 'Poppins', sans-serif !important;
+      font-weight: 600;
+      font-size: 20px;
+      margin-left: 15px;
+}
+
+.cad-box .h2_btn {
+      color: var(--primary-color-light);
+}
+.card .cad-box .hours{
+      font-size: 17px;
+      color: var(--text-color);
+      font-weight: 600;
+      margin-top: 10px;
+      margin-left: 15px;
+}
+.card.red{
+      background-color: var(--primary-color);
+}
+
+.btn.btn-danger{
+   /*   width: 200px;
+      height: 80px;*/
+      background-color: var(--primary-color);
+      border: none;
+      margin: 0 auto;
+      margin-top: -10px;
+}
+.red-cad{
+      width: 270px;
+      height: 112px;
+      background-color: var(--primary-color);
+      border: none;
+      margin-left: -13px;
+      margin-top: -6px;
+      display: flex;
+      align-items: center;
+}
+
+.btn.btn-danger.disabled{
+      margin:0 auto;
+}
+.card.green{
+      background-color: var(--green);
+}
+
+.btn.btn-success{
+    /*  width: 200px;
+      height: 80px;*/
+      background-color: var(--green);
+      border: none;
+      margin: 0 auto;
+      margin-top: -10px;
+}
+
+.card.yellow{
+      background-color: var(--yellow);
+}
+
+.card:hover {
+      transform: translateY(-8px);
+      cursor: pointer;
+   /*   background-image: linear-gradient(rgba(180, 87, 85, 0.75), rgba(180, 87, 85, 0.75)), url(../img/2.jpeg);*/
+}
+
+.card p {
+      color: #a3a5ae;
+      font-size: 15px;
+}
